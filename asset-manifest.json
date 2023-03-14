@@ -1,35 +1,35 @@
 {
   "files": {
-    "main.css": "/react-todo-revva/static/css/main.e913a27d.css",
-    "main.js": "/react-todo-revva/static/js/main.f376371a.js",
+    "main.css": "/react-todo-revva/static/css/main.aa24ea52.css",
+    "main.js": "/react-todo-revva/static/js/main.1fb19305.js",
     "static/css/181.fb7e9406.chunk.css": "/react-todo-revva/static/css/181.fb7e9406.chunk.css",
     "static/js/181.5af2474e.chunk.js": "/react-todo-revva/static/js/181.5af2474e.chunk.js",
     "static/css/197.5e9347de.chunk.css": "/react-todo-revva/static/css/197.5e9347de.chunk.css",
     "static/js/197.8b1a2769.chunk.js": "/react-todo-revva/static/js/197.8b1a2769.chunk.js",
-    "static/css/450.4dbee978.chunk.css": "/react-todo-revva/static/css/450.4dbee978.chunk.css",
-    "static/js/450.ce351dca.chunk.js": "/react-todo-revva/static/js/450.ce351dca.chunk.js",
-    "static/css/462.1730c04d.chunk.css": "/react-todo-revva/static/css/462.1730c04d.chunk.css",
-    "static/js/462.a5539455.chunk.js": "/react-todo-revva/static/js/462.a5539455.chunk.js",
-    "static/js/705.e34729a4.chunk.js": "/react-todo-revva/static/js/705.e34729a4.chunk.js",
+    "static/css/450.ef8c5e32.chunk.css": "/react-todo-revva/static/css/450.ef8c5e32.chunk.css",
+    "static/js/450.0d076fab.chunk.js": "/react-todo-revva/static/js/450.0d076fab.chunk.js",
+    "static/css/462.7d1a4aa5.chunk.css": "/react-todo-revva/static/css/462.7d1a4aa5.chunk.css",
+    "static/js/462.b16e3b75.chunk.js": "/react-todo-revva/static/js/462.b16e3b75.chunk.js",
+    "static/js/705.0ec338e1.chunk.js": "/react-todo-revva/static/js/705.0ec338e1.chunk.js",
     "static/media/logo-big.svg": "/react-todo-revva/static/media/logo-big.1b8d69c11cad68177f699103d5866856.svg",
     "static/media/logo-small.svg": "/react-todo-revva/static/media/logo-small.079a69361586d5332614293b20ff4b72.svg",
     "index.html": "/react-todo-revva/index.html",
     "static/media/not-favorite.svg": "/react-todo-revva/static/media/not-favorite.e62a35887efef2bde6c53145b5afa7fb.svg",
     "static/media/favorite.svg": "/react-todo-revva/static/media/favorite.3cdf113c05100a4288f0e0d7b99a7361.svg",
-    "main.e913a27d.css.map": "/react-todo-revva/static/css/main.e913a27d.css.map",
-    "main.f376371a.js.map": "/react-todo-revva/static/js/main.f376371a.js.map",
+    "main.aa24ea52.css.map": "/react-todo-revva/static/css/main.aa24ea52.css.map",
+    "main.1fb19305.js.map": "/react-todo-revva/static/js/main.1fb19305.js.map",
     "181.fb7e9406.chunk.css.map": "/react-todo-revva/static/css/181.fb7e9406.chunk.css.map",
     "181.5af2474e.chunk.js.map": "/react-todo-revva/static/js/181.5af2474e.chunk.js.map",
     "197.5e9347de.chunk.css.map": "/react-todo-revva/static/css/197.5e9347de.chunk.css.map",
     "197.8b1a2769.chunk.js.map": "/react-todo-revva/static/js/197.8b1a2769.chunk.js.map",
-    "450.4dbee978.chunk.css.map": "/react-todo-revva/static/css/450.4dbee978.chunk.css.map",
-    "450.ce351dca.chunk.js.map": "/react-todo-revva/static/js/450.ce351dca.chunk.js.map",
-    "462.1730c04d.chunk.css.map": "/react-todo-revva/static/css/462.1730c04d.chunk.css.map",
-    "462.a5539455.chunk.js.map": "/react-todo-revva/static/js/462.a5539455.chunk.js.map",
-    "705.e34729a4.chunk.js.map": "/react-todo-revva/static/js/705.e34729a4.chunk.js.map"
+    "450.ef8c5e32.chunk.css.map": "/react-todo-revva/static/css/450.ef8c5e32.chunk.css.map",
+    "450.0d076fab.chunk.js.map": "/react-todo-revva/static/js/450.0d076fab.chunk.js.map",
+    "462.7d1a4aa5.chunk.css.map": "/react-todo-revva/static/css/462.7d1a4aa5.chunk.css.map",
+    "462.b16e3b75.chunk.js.map": "/react-todo-revva/static/js/462.b16e3b75.chunk.js.map",
+    "705.0ec338e1.chunk.js.map": "/react-todo-revva/static/js/705.0ec338e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e913a27d.css",
-    "static/js/main.f376371a.js"
+    "static/css/main.aa24ea52.css",
+    "static/js/main.1fb19305.js"
   ]
 }
