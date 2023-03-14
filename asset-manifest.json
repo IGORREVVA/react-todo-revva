@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-todo-revva/static/css/main.e913a27d.css",
+    "main.js": "/react-todo-revva/static/js/main.5069a20d.js",
+    "static/css/181.fb7e9406.chunk.css": "/react-todo-revva/static/css/181.fb7e9406.chunk.css",
+    "static/js/181.1ed1248e.chunk.js": "/react-todo-revva/static/js/181.1ed1248e.chunk.js",
+    "static/css/197.5e9347de.chunk.css": "/react-todo-revva/static/css/197.5e9347de.chunk.css",
+    "static/js/197.eff131d4.chunk.js": "/react-todo-revva/static/js/197.eff131d4.chunk.js",
+    "static/css/450.4dbee978.chunk.css": "/react-todo-revva/static/css/450.4dbee978.chunk.css",
+    "static/js/450.3a912795.chunk.js": "/react-todo-revva/static/js/450.3a912795.chunk.js",
+    "static/css/462.1730c04d.chunk.css": "/react-todo-revva/static/css/462.1730c04d.chunk.css",
+    "static/js/462.caa85119.chunk.js": "/react-todo-revva/static/js/462.caa85119.chunk.js",
+    "static/js/705.e34729a4.chunk.js": "/react-todo-revva/static/js/705.e34729a4.chunk.js",
+    "static/media/logo-big.svg": "/react-todo-revva/static/media/logo-big.14e95e83795a924c4acb807a373b60be.svg",
+    "static/media/logo-small.svg": "/react-todo-revva/static/media/logo-small.e92db91ad36060028129df2c94f3696a.svg",
+    "index.html": "/react-todo-revva/index.html",
+    "static/media/not-favorite.svg": "/react-todo-revva/static/media/not-favorite.e62a35887efef2bde6c53145b5afa7fb.svg",
+    "static/media/favorite.svg": "/react-todo-revva/static/media/favorite.3cdf113c05100a4288f0e0d7b99a7361.svg",
+    "main.e913a27d.css.map": "/react-todo-revva/static/css/main.e913a27d.css.map",
+    "main.5069a20d.js.map": "/react-todo-revva/static/js/main.5069a20d.js.map",
+    "181.fb7e9406.chunk.css.map": "/react-todo-revva/static/css/181.fb7e9406.chunk.css.map",
+    "181.1ed1248e.chunk.js.map": "/react-todo-revva/static/js/181.1ed1248e.chunk.js.map",
+    "197.5e9347de.chunk.css.map": "/react-todo-revva/static/css/197.5e9347de.chunk.css.map",
+    "197.eff131d4.chunk.js.map": "/react-todo-revva/static/js/197.eff131d4.chunk.js.map",
+    "450.4dbee978.chunk.css.map": "/react-todo-revva/static/css/450.4dbee978.chunk.css.map",
+    "450.3a912795.chunk.js.map": "/react-todo-revva/static/js/450.3a912795.chunk.js.map",
+    "462.1730c04d.chunk.css.map": "/react-todo-revva/static/css/462.1730c04d.chunk.css.map",
+    "462.caa85119.chunk.js.map": "/react-todo-revva/static/js/462.caa85119.chunk.js.map",
+    "705.e34729a4.chunk.js.map": "/react-todo-revva/static/js/705.e34729a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e913a27d.css",
+    "static/js/main.5069a20d.js"
+  ]
+}
