@@ -1,0 +1,11 @@
+.form {
+    div + div {
+        margin-top: 20px;
+    }
+
+    .buttonsWrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}

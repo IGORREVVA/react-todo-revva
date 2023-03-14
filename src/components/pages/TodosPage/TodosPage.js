@@ -4,9 +4,9 @@ import TodoListContext from "../../../context/context";
 
 import Todo from "../../Todo/Todo";
 import Logo from "../../Logo/Logo";
+import Button from "../../Button/Button";
 
 import styles from "./TodosPage.module.scss";
-import Button from "../../Button/Button";
 
 const TodosPage = () => {
     const context = useContext(TodoListContext);

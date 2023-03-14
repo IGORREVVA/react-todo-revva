@@ -5,7 +5,7 @@ import styles from "./Logo.module.scss"
 
 const Logo = () => {
     return (
-        <Link to="/">
+        <Link to="/react-todo-revva">
             <div className={styles.logo}>
                 <img src={logoSmall} alt="Logo"/>
             </div>

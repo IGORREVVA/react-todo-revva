@@ -1,19 +1,18 @@
-
-
 import styles from "./Checkbox.module.scss";
 
 const Checkbox = ({name, inputId, labelContent, checked, setChecked}) => {
     return (
-        <div>
-            <label htmlFor={inputId}>
-                <input
-                    id={inputId}
-                    type="checkbox"
-                    name={name}
-                    checked={checked}
-                    onChange={() => {setChecked(!checked)}}
-                />
+        <div className={styles.checkboxWrapper}>
+            <input
+                className={styles.input}
+                id={inputId}
+                type="checkbox"
+                name={name}
+                checked={checked}
+                onChange={() => setChecked(!checked)}
+            />
 
+            <label className={styles.label} htmlFor={inputId}>
                 {labelContent}
             </label>
         </div>
