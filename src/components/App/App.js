@@ -21,7 +21,7 @@ const App = () => {
                 <Suspense>
                     <Routes>
                         <Route
-                            path="/"
+                            path="/react-todo-revva"
                             element={<Homepage/>}
                         />
 
