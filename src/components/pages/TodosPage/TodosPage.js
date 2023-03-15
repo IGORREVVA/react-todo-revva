@@ -18,7 +18,7 @@ const TodosPage = () => {
         setTodoList(newTodoList);
     };
     const editTodo = (element) => {
-        navigate(`/todos/edit/${element.index}`);
+        navigate(`/react-todo-revva/todos/edit/${element.index}`);
     };
 
     const actions = {
@@ -34,7 +34,7 @@ const TodosPage = () => {
                 <Button
                     buttonType="button"
                     buttonStyle="primary"
-                    handleClick={() => navigate("/todos/new")}
+                    handleClick={() => navigate("/react-todo-revva/todos/new")}
                 >
                     Create new
                 </Button>

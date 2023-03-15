@@ -22,11 +22,11 @@ const App = () => {
                     <Routes>
                         <Route
                             path="/react-todo-revva"
-                            element={<Homepage/>}
+                            element={<Homepage/> }
                         />
 
                         <Route
-                            path="/todos"
+                            path="/react-todo-revva/todos"
                             element={
                                 <TodoListContext.Provider value={{todoList, setTodoList}}>
                                     <TodosPage/>
@@ -35,7 +35,7 @@ const App = () => {
                         />
 
                         <Route
-                            path="/todos/new"
+                            path="/react-todo-revva/todos/new"
                             element={
                                 <TodoListContext.Provider value={{todoList, setTodoList, onError}}>
                                     <CreateTodoPage/>
@@ -44,7 +44,7 @@ const App = () => {
                         />
 
                         <Route
-                            path="/todos/edit/:index"
+                            path="/react-todo-revva/todos/edit/:index"
                             element={
                                 <TodoListContext.Provider value={{todoList, setTodoList}}>
                                     <EditTodoPage />

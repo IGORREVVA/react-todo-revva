@@ -24,7 +24,7 @@ const EditTodoPage = () => {
         });
 
         setTodoList([...newTodoList]);
-        navigate("/todos");
+        navigate("/react-todo-revva/todos");
     }
 
     return (

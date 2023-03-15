@@ -8,7 +8,7 @@ const PreloadPage = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/todos");
+        navigate("/react-todo-revva/todos");
     };
 
     return (

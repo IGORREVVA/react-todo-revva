@@ -19,7 +19,7 @@ const CreateTodoPage = () => {
             name: values.name,
             favorite: favorite
         }]);
-        navigate("/todos");
+        navigate("/react-todo-revva/todos");
     }
 
     return (
