@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-todo-revva/static/css/main.aa24ea52.css",
-    "main.js": "/react-todo-revva/static/js/main.6fbea534.js",
+    "main.js": "/react-todo-revva/static/js/main.8f77bfd3.js",
     "static/css/181.fb7e9406.chunk.css": "/react-todo-revva/static/css/181.fb7e9406.chunk.css",
     "static/js/181.8783cb55.chunk.js": "/react-todo-revva/static/js/181.8783cb55.chunk.js",
     "static/css/197.5e9347de.chunk.css": "/react-todo-revva/static/css/197.5e9347de.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/not-favorite.svg": "/react-todo-revva/static/media/not-favorite.e62a35887efef2bde6c53145b5afa7fb.svg",
     "static/media/favorite.svg": "/react-todo-revva/static/media/favorite.3cdf113c05100a4288f0e0d7b99a7361.svg",
     "main.aa24ea52.css.map": "/react-todo-revva/static/css/main.aa24ea52.css.map",
-    "main.6fbea534.js.map": "/react-todo-revva/static/js/main.6fbea534.js.map",
+    "main.8f77bfd3.js.map": "/react-todo-revva/static/js/main.8f77bfd3.js.map",
     "181.fb7e9406.chunk.css.map": "/react-todo-revva/static/css/181.fb7e9406.chunk.css.map",
     "181.8783cb55.chunk.js.map": "/react-todo-revva/static/js/181.8783cb55.chunk.js.map",
     "197.5e9347de.chunk.css.map": "/react-todo-revva/static/css/197.5e9347de.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.aa24ea52.css",
-    "static/js/main.6fbea534.js"
+    "static/js/main.8f77bfd3.js"
   ]
 }
