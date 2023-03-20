@@ -1,6 +1,6 @@
 import styles from "./Checkbox.module.scss";
 
-const Checkbox = ({name, inputId, labelContent, checked, setChecked}) => {
+const Checkbox = ({name, inputId, labelContent, value, onChange}) => {
     return (
         <div className={styles.checkboxWrapper}>
             <input
@@ -8,8 +8,8 @@ const Checkbox = ({name, inputId, labelContent, checked, setChecked}) => {
                 id={inputId}
                 type="checkbox"
                 name={name}
-                checked={checked}
-                onChange={() => setChecked(!checked)}
+                checked={value}
+                onChange={onChange}
             />
 
             <label className={styles.label} htmlFor={inputId}>

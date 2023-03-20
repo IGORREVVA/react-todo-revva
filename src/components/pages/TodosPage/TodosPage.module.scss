@@ -14,10 +14,11 @@
         font-size: 20px;
     }
 
-    .todosPageList {
-        li + li {
-            margin-top: 20px;
-        }
+    .todosPageNotFound {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 700;
     }
 
     a {

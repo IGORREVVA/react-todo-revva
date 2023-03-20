@@ -1,6 +1,5 @@
-.counter {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    color: #000000;
+.todoList {
+    li + li {
+        margin-top: 20px;
+    }
 }

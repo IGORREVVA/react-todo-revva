@@ -1,6 +1,6 @@
 import {useParams, useNavigate} from "react-router-dom";
 import TodoListContext from "../../../context/context";
-import {useContext, useState} from "react";
+import {useContext} from "react";
 
 import Logo from "../../Logo/Logo";
 import Form from "../../Form/Form";
@@ -12,7 +12,6 @@ const EditTodoPage = () => {
     const {todoList, setTodoList} = useContext(TodoListContext);
     const editElementIndex = useParams().index;
     const navigate = useNavigate();
-    const [favorite, setFavorite] = useState(todoList[editElementIndex - 1].favorite);
 
     function editTodo(values) {
         const newTodoList = todoList.map((element, index) => {
@@ -34,10 +33,8 @@ const EditTodoPage = () => {
             <h2 className={styles.editTodoPageHeading}>Edit Todo</h2>
 
             <Form
-                name={todoList[editElementIndex - 1].name}
+                values={todoList[editElementIndex - 1]}
                 onSubmit={editTodo}
-                checked={favorite}
-                setChecked={setFavorite}
             />
         </div>
     );

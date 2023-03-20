@@ -5,11 +5,14 @@ import Button from "../Button/Button";
 import {Formik} from "formik";
 import {useNavigate} from "react-router-dom";
 
-const Form = ({name, onSubmit, checked, setChecked}) => {
+const Form = ({values, onSubmit}) => {
     const navigate = useNavigate();
+    const name = values?.name ? values.name : "";
+    const favorite = values?.favorite ? values.favorite : false;
+
     return (
         <Formik
-            initialValues={{name: name ? name : ""}}
+            initialValues={{name: name, favorite: favorite}}
             validate={values => {
                 const errors = {};
 
@@ -47,10 +50,10 @@ const Form = ({name, onSubmit, checked, setChecked}) => {
                     />
 
                     <Checkbox
-                        inputId="favorites"
+                        inputId="favorite"
                         labelContent="Add to favorites"
-                        checked={checked}
-                        setChecked={setChecked}
+                        onChange={handleChange}
+                        value={values.favorite}
                     />
 
                     <div className={styles.buttonsWrapper}>
@@ -64,7 +67,7 @@ const Form = ({name, onSubmit, checked, setChecked}) => {
                         <Button
                             buttonType="button"
                             buttonStyle="secondary"
-                            handleClick={() => navigate("/todos")}
+                            handleClick={() => navigate("/react-todo-revva/todos")}
                         >
                             Back
                         </Button>

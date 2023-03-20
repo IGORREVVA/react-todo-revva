@@ -1,18 +1,15 @@
 import styles from "./TodoList.module.scss";
-import {Link} from "react-router-dom";
 
-const TodoList = () => {
+import Todo from "../Todo/Todo";
+
+const TodoList = ({todoList}) => {
+
+
     return (
-        <div>
-            TO DO LIST
-
-            <div className={styles.counter}>
-                8 Todos
-            </div>
-
-            <Link to="/tasks/new">
-                New todo
-            </Link>
+        <div className={styles.todoList}>
+            {todoList.map((item, index) => {
+                return <Todo key={index} element={item} />
+            })}
         </div>
     );
 };

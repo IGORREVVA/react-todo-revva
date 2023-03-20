@@ -1,30 +1,36 @@
-import {useNavigate} from "react-router-dom";
-import {useContext} from "react";
+import {useLocation, useNavigate} from "react-router-dom";
+import {useContext, useEffect, useState} from "react";
 import TodoListContext from "../../../context/context";
 
-import Todo from "../../Todo/Todo";
 import Logo from "../../Logo/Logo";
 import Button from "../../Button/Button";
+import Pagination from "../../Pagination/Pagination";
+import TodoList from "../../TodoList/TodoList";
 
 import styles from "./TodosPage.module.scss";
 
 const TodosPage = () => {
     const context = useContext(TodoListContext);
     const navigate = useNavigate();
-    const {todoList, setTodoList} = context;
-    const deleteTodo = (deletedTodo) => {
-        const newTodoList = todoList.filter(todo => todo.index !== deletedTodo.index);
+    const {todoList} = context;
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+    const { search } = useLocation();
 
-        setTodoList(newTodoList);
-    };
-    const editTodo = (element) => {
-        navigate(`/react-todo-revva/todos/edit/${element.index}`);
-    };
+    useEffect(() => {
+        const params = new URLSearchParams(search);
+        const page = parseInt(params.get('page'));
 
-    const actions = {
-        delete: deleteTodo,
-        edit: editTodo
-    };
+        setTotalPages(Math.ceil(todoList.length / 5));
+
+        if (page && page <= totalPages) {
+            setCurrentPage(page);
+        }
+    }, [search, totalPages, todoList.length]);
+
+    const startIndex = (currentPage - 1) * 5;
+    const endIndex = startIndex + 5;
+    const currentItems = todoList.slice(startIndex, endIndex);
 
     return (
         <div className={styles.todosPage}>
@@ -40,17 +46,9 @@ const TodosPage = () => {
                 </Button>
             </div>
 
-            <div className={styles.todosPageList}>
-                {todoList?.length > 0 ? (
-                    todoList.map(element => {
-                        return <Todo key={element.index} element={element} actions={actions} />;
-                    })
-                ) : (
-                    <div>
-                        <h3 className={styles.todosPageHeading}>No Todo found!!!</h3>
-                    </div>
-                )}
-            </div>
+            {todoList?.length > 0 ? <TodoList todoList={currentItems} /> : <div className={styles.todosPageNotFound}>Not found todos!!!</div>}
+
+            {todoList?.length > 5 ? <Pagination currentPage={currentPage} totalPages={totalPages} /> : null}
         </div>
     );
 };

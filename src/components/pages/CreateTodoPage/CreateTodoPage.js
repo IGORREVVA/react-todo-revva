@@ -1,4 +1,4 @@
-import {useContext, useState} from "react";
+import {useContext} from "react";
 import {useNavigate} from "react-router-dom";
 import TodoListContext from "../../../context/context";
 
@@ -8,7 +8,6 @@ import Form from "../../Form/Form";
 import styles from "./CreateTodoPage.module.scss";
 
 const CreateTodoPage = () => {
-    const [favorite, setFavorite] = useState(false);
     const context = useContext(TodoListContext);
     const {todoList, setTodoList} = context;
     const navigate = useNavigate();
@@ -17,7 +16,7 @@ const CreateTodoPage = () => {
         setTodoList([...todoList, {
             index: todoList.length + 1,
             name: values.name,
-            favorite: favorite
+            favorite: values.favorite
         }]);
         navigate("/react-todo-revva/todos");
     }
@@ -28,7 +27,7 @@ const CreateTodoPage = () => {
 
             <h1 className={styles.heading}>Create new</h1>
 
-            <Form onSubmit={addTodo} checked={favorite} setChecked={setFavorite} />
+            <Form onSubmit={addTodo} />
         </div>
     );
 };

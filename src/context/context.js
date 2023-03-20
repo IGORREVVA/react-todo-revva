@@ -4,7 +4,8 @@ const TodoListContext = React.createContext({
     todoList: [],
     setTodoList: () => {},
     indexOfElementToEdit: null,
-    onError: null
+    onError: null,
+    paginationList: null
 });
 
 export default TodoListContext;
