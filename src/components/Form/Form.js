@@ -1,7 +1,7 @@
 import styles from "./Form.module.scss";
-import Input from "../Input/Input";
+import Input from "../UI/Input/Input";
 import Checkbox from "../Checkbox/Checkbox";
-import Button from "../Button/Button";
+import Button from "../UI/Button/Button";
 import {Formik} from "formik";
 import {useNavigate} from "react-router-dom";
 
@@ -47,6 +47,7 @@ const Form = ({values, onSubmit}) => {
                         value={values.name}
                         errors={errors}
                         touched={touched}
+                        placeholder="Create new Todo"
                     />
 
                     <Checkbox

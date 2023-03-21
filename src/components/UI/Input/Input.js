@@ -1,11 +1,11 @@
 import styles from "./Input.module.scss";
 
-const Input = ({inputId, labelContent, value, onChange, onBlur, errors, touched}) => {
+const Input = ({inputId, labelContent, value, onChange, onBlur, errors, touched, placeholder}) => {
     return (
         <div className={styles.inputWrapper}>
-            <label className={styles.label} htmlFor={inputId}>
+            {!labelContent ? null : <label className={styles.label} htmlFor={inputId}>
                 {labelContent}
-            </label>
+            </label>}
 
             <input
                 id={inputId}
@@ -13,13 +13,13 @@ const Input = ({inputId, labelContent, value, onChange, onBlur, errors, touched}
                 type="text"
                 name={inputId}
                 value={value}
-                placeholder="Create new Todo"
+                placeholder={placeholder}
                 onBlur={onBlur}
                 onChange={onChange}
             />
 
             {
-                errors[inputId] && touched[inputId] ?
+                !errors ? null : errors[inputId] && touched[inputId] ?
                     <div className={styles.error}>
                         {errors[inputId] && touched[inputId] && errors[inputId]}
                     </div>

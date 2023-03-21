@@ -2,7 +2,7 @@ import {useNavigate} from "react-router-dom";
 
 import logo from "../../../images/logo-big.svg";
 import styles from "./Homepage.module.scss";
-import Button from "../../Button/Button";
+import Button from "../../UI/Button/Button";
 
 const PreloadPage = () => {
     const navigate = useNavigate();

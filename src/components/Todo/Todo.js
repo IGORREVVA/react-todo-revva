@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+import Button from "../UI/Button/Button";
 
 import styles from "./Todo.module.scss";
 import favorite from "../../images/favorite.svg";

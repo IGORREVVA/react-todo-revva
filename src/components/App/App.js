@@ -1,7 +1,8 @@
 import React, {Suspense, useState} from "react";
-import styles from './App.module.scss';
 import {Route, Routes} from "react-router-dom";
 import TodoListContext from "../../context/context";
+
+import styles from './App.module.scss';
 
 const Homepage = React.lazy(() => import("../pages/Homepage/Homepage"));
 const TodosPage = React.lazy(() => import("../pages/TodosPage/TodosPage"));
@@ -44,15 +45,6 @@ const App = () => {
                         element={
                             <TodoListContext.Provider value={{todoList, setTodoList}}>
                                 <EditTodoPage />
-                            </TodoListContext.Provider>
-                        }
-                    />
-
-                    <Route
-                        path="/react-todo-revva/todos/todo/:pageIndex"
-                        element={
-                            <TodoListContext.Provider value={{todoList, setTodoList, paginationList}}>
-                                <TodosPage/>
                             </TodoListContext.Provider>
                         }
                     />
