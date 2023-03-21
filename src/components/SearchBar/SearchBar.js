@@ -8,13 +8,14 @@ import styles from "./SearchBar.module.scss"
 
 const SearchBar = () => {
     const context = useContext(TodoListContext)
-    const {todoList} = context;
+    const {todoList, setTodoList} = context;
     const [search, setSearch] = useState("");
 
     const searchTodoList = (search, todoList) => {
         const arr = todoList.filter((item) => {
             return item.name.toLowerCase().includes(search.toLowerCase());
         });
+        setTodoList(arr);
     };
 
     return (
@@ -23,7 +24,7 @@ const SearchBar = () => {
                 inputId="Search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search todos"
+                placeholder="Search todos.."
             />
 
             <Button

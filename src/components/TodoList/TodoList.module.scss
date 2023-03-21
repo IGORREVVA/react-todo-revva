@@ -1,5 +1,15 @@
 .todoList {
-    li + li {
-        margin-top: 20px;
+    .todoListHeader {
+        display: flex;
+    }
+
+    .todoListHeaderName {
+        width: 400px;
+    }
+
+    .todoListHeaderFavorite,
+    .todoListHeaderStatus {
+        width: 100px;
+        text-align: center;
     }
 }

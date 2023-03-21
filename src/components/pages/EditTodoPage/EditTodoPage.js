@@ -18,6 +18,7 @@ const EditTodoPage = () => {
             if (editElementIndex - 1 === index) {
                 element.name = values.name;
                 element.favorite = values.favorite;
+                element.status = values.status;
             }
             return element;
         });

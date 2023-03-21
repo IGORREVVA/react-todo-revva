@@ -2,25 +2,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
     background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #222222;
+    border-top: 1px solid darkgrey;
 
-    .headingWrapper {
+    .todoBodyWrapper {
         display: flex;
+        width: 79%;
+    }
+
+    .todoButtonsWrapper {
+        width: 21%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .todoHeading {
+        width: 400px;
         margin: 0;
         font-size: 22px;
         font-weight: 700;
-        line-height: 1.1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
-    .todoIcon {
-        margin-right: 10px;
+    .todoFavorite {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+    }
+
+    .todoFavoriteIcon {
         width: 20px;
-        height: auto;
+        height: 20px;
+        align-self: center;
+    }
+
+    .todoStatus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Rubik', sans-serif;
+        width: 100px;
+
+        img {
+            width: 20px;
+        }
     }
 }

@@ -16,6 +16,7 @@ const CreateTodoPage = () => {
         setTodoList([...todoList, {
             index: todoList.length + 1,
             name: values.name,
+            status: values.status,
             favorite: values.favorite
         }]);
         navigate("/react-todo-revva/todos");

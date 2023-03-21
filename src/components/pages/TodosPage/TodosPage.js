@@ -36,9 +36,9 @@ const TodosPage = () => {
     const endIndex = startIndex + 5;
     const currentItems = todoList.slice(startIndex, endIndex);
 
-    const sortPosts = (sort) => {
-        setSelectedSort(sort);
-        switch (sort) {
+    const sortPosts = (event) => {
+        setSelectedSort(event.target.value);
+        switch (event.target.value) {
             case "ascending":
                 setTodoList([...todoList].sort((a, b) => a.name.localeCompare(b.name)));
                 break;
@@ -49,7 +49,6 @@ const TodosPage = () => {
                 setTodoList([...todoList].sort((a, b) => (a.favorite === b.favorite) ? 0 : a.favorite ? -1 : 1));
                 break;
         }
-        console.log("sort", sort);
     };
 
     return (
